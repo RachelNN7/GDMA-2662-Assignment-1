@@ -47,10 +47,24 @@ html {
 /*------ Typography------- */
 i {
     font-size: 50px;
-    font-weight: 900;
     line-height: 50px;
-    text-align: left;
+}
+
+legend i, i {
+    font-weight: 900;
     color: #FE8360;
+}
+
+legend i {
+    font-size: 20px;
+    line-height: 20px;
+}
+
+footer > div i {
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 22px;
+    color: #b6bcc7;
 }
 
 
