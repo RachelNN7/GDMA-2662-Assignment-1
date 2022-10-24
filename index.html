@@ -11,7 +11,7 @@
 <title>Multi Page Static Site</title>
 </head>
 
-<body id="home">
+<body>
     <header>
         <div class="wrapper row">
             <div>
@@ -20,21 +20,20 @@
             <div>
                 <nav>
                     <ul>
-                        <li>Support<a href="#">info@acton.com</a></li>
+                        <li>Support<a href="#">info&#64;acton.com</a></li>
                         <li><a href="#">login</a></li>
                     </ul>
                 </nav>
                 <nav>
                     <ul>
-                        <li><a href="#home">Home</a></li>
-                        <li><a href="#benefits">Benefits</a></li>
-                        <li><a href="#hosting">Hosting</a></li>
+                        <li><a href="#">Home</a></li>
+                        <li><a href="two-pages/benefits.html">Benefits</a></li>
+                        <li><a href="two-pages/hosting.html">Hosting</a></li>
                     </ul>
                 </nav>
             </div>
         </div>
-        <div>
-            <img src="img/laptop-hero-img.jpg" alt="opening laptop">
+        <div class="hero-bg">
             <div class="wrapper">
                 <h1>Awesome Hosting</h1>
                 <p>With unlimited features</p>
@@ -47,13 +46,17 @@
         <section>
             <div class="row">
                 <div>
-                    <h2>Optimized Hosting</h2>
+                    <header>
+                         <h2>Optimized Hosting</h2>
+                    </header>
                     <p>With our latest optimized server hardware, you'll get faster sites — up to nearly 40% average improvement in overall server response times.</p>
                     <dl>
                         <dt>Non-Volatile Memory Express (NVMe) Solid State Drives (SSDs)</dt>
                         <dd>Get up to a 7x throughput boost2 with our server NVMe SSDs for resource-intensive websites.</dd>
+
                         <dt>PHP OPCachePHP</dt>
                         <dd>scripts are executed once, then stored in memory for up to 33% faster server response times.</dd>
+
                         <dt>Substantial I/O Resources</dt>
                         <dd>Get faster queries of large databases and help prevent slow loading websites — with 10MB/s of I/O.</dd>
                     </dl>
@@ -61,38 +64,49 @@
                         <li><a href="#">See Plans and Pricing</a></li>
                     </div>
                 </div>
+                <div class="certificate">
+                    <i class="fa-solid fa-certificate"></i>
+                </div>
                 <div>
                     <img src="img/woman-on-laptop-img.jpg" alt="" width="410">
                 </div>
             </div>
         </section>
-        <section>
-            <div class="row">
-                <div class="row">
-                    <section>
-                        <!-- font Awesome -->
-                        <header>
-                            <h3>Select your template</h3>
-                        </header>
-                        <p>Choose from 100s of templates covering every type of business.</p>
-                    </section>
-                    <section>
-                        <!-- font Awesome -->
-                        <header>
-                            <h3>Make it your own</h3>
-                        </header>
-                        <p>Change colors, fonts or the entire layout with just a click.</p>
-                    </section>
-                    <section>
-                        <!-- font Awesome -->
-                        <header>
-                            <h3>Launch and promote</h3>
-                        </header>
-                        <p>Use the integrated marketing tools to attract (and keep) customers.</p>
-                    </section>
+        <div class="row">
+            <section class="row">
+                <div>
+                    <i class="fa-solid fa-compass-drafting"></i>
                 </div>
-            </div>
-        </section>
+                <div>
+                    <header>
+                        <h3>Select your template</h3>
+                    </header>
+                    <p>Choose from 100s of templates covering every type of business.</p>
+                </div>
+            </section>
+            <section class="row">
+                <div>
+                    <i class="fa-solid fa-pen-to-square"></i>
+               </div>
+               <div>
+                   <header>
+                       <h3>Make it your own</h3>
+                   </header>
+                   <p>Change colors, fonts or the entire layout with just a click.</p>
+               </div>
+            </section>
+            <section class="row">
+                <div>
+                    <i class="fa-solid fa-champagne-glasses"></i>
+                </div>
+                <div>
+                    <header>
+                        <h3>Launch and promote</h3>
+                    </header>
+                    <p>Use the integrated marketing tools to attract (and keep) customers.</p>
+                </div>
+            </section>
+        </div>
         
     </main>
 
@@ -116,9 +130,11 @@
             </div>
             <div>
                 <h4>Quick links</h4>
-                <!-- font Awesome -->
-                <!-- font Awesome -->
-                <!-- font Awesome -->
+                <div class="row">
+                    <!-- font Awesome -->
+                    <!-- font Awesome -->
+                    <!-- font Awesome -->
+                </div>
             </div>
         </div>
     </footer>
