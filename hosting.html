@@ -18,7 +18,7 @@
                 <img src="img/act-On-logo-img.jpg" alt="act-on" width="150">
             </div>
             <div>
-                <ul>
+                <ul id="support-items">
                     <li>Support<a href="#">info@acton.com</a></li>
                     <li><a href="#">login</a></li>
                 </ul>
@@ -41,21 +41,27 @@
     <main class="wrapper">
         <div id="form">
             <form class="row">
-                    <legend><i class="fa-solid fa-magnifying-glass"></i>Search Your Domain</legend>
-                <label for="domain">
-                    <input type="text" name="domain" placeholder="Enter your domain name">
-                </label>
-
+                <header>
+                    <h2>Search Your<br> Domain</h2>
+                </header>
+                <label for="sr-only" class="sr-only"><i class="fa-solid fa-magnifying-glass"></i></label>
+                <input type="text" name="domain" placeholder="Enter your domain name">
+                
+                <label for="sr-only" class="sr-only">year &#40;0 &#45;1&#41;</label>
                 <select for="year" id="year">
-                    <option value="year">year &#40;0 &#45;1&#41;</option>
-                    <option value="1">1</option>
-                    <option value="1">2</option>
+                    <option value="0-1">&#40;0 &#45;1&#41; years</option>
+                    <option value="1-2">&#40;1 &#45;2&#41; years</option>
+                    <option value="2-3">&#40;2 &#45;3&#41; years</option>
+                    <option value="5+">5&#43; years</option>
                 </select>
 
+                <label for="sr-only" class="sr-only">.com</label>
                 <select for=".com" id="com">
-                    <option value="web">.com</option>
-                    <option value="1">1</option>
-                    <option value="1">2</option>
+                    <option value=".com">.com</option>
+                    <option value=".org">.org</option>
+                    <option value=".net">.net</option>
+                    <option value=".gov">.gov</option>
+                    <option value=".edu">.edu</option>
                 </select>
 
                 <p>
@@ -65,71 +71,93 @@
         </div>
 
         <table>
-            <tr>
-              <th>$5 per month basic plan</th>
-              <th>$7 per month standerd plan</th>
-              <th>$9 per month pro plan</th>
-              <th>$10 per month premium plan</th>
-            </tr>
-            <tr>
-              <td>2GB Disk Space</td>
-              <td>5GB Disk Space</td>
-              <td>10GB Disk Space</td>
-              <td>15GB Disk Space</td>
-            </tr>
-            <tr>
-                <td>1TB Bandwidth</td>
-                <td>1TB Bandwidth</td>
-                <td>1TB Bandwidth</td>
-                <td>1TB Bandwidth</td>
-            </tr>
-            <tr>
-                <td>No DDoS Protection</td>
-                <td>Free DDoS Protection</td>
-                <td>Free DDoS Protection</td>
-                <td>Free DDoS Protection</td>
-            </tr>
-            <tr>
-                <td>No Daily Backups</td>
-                <td>Free Daily BackupsNo Managed Hosting</td>
-                <td>Free Daily BackupsNo Managed Hosting</td>
-                <td>Free Daily BackupsNo Managed Hosting</td>
-            </tr>
-            <tr>
-                <td>No Managed Hosting</td>
-                <td>No Managed Hosting</td>
-                <td>Managed Hosting</td>
-                <td>Managed Hosting</td>
-            </tr>
-          </table>
+            <thead>
+                <tr>
+                    <th>$5 <br> per month</th>
+                    <th>$7 <br> per month</th>
+                    <th>$9 <br> per month</th>
+                    <th>$10 <br> per month</th>
+                  </tr>
+                  <tr>
+                      <th>basic plan</th>
+                      <th>standerd plan</th>
+                      <th>pro plan</th>
+                      <th>premium plan</th>
+                    </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>2GB Disk Space</td>
+                    <td>5GB Disk Space</td>
+                    <td>10GB Disk Space</td>
+                    <td>15GB Disk Space</td>
+                  </tr>
+                <tr>
+                    <td>1TB Bandwidth</td>
+                    <td>1TB Bandwidth</td>
+                    <td>1TB Bandwidth</td>
+                    <td>1TB Bandwidth</td>
+                </tr>
+                <tr>
+                    <td>No DDoS Protection</td>
+                    <td>Free DDoS Protection</td>
+                    <td>Free DDoS Protection</td>
+                    <td>Free DDoS Protection</td>
+                </tr>
+                <tr>
+                    <td>No Daily Backups</td>
+                    <td>Free Daily BackupsNo Managed Hosting</td>
+                    <td>Free Daily BackupsNo Managed Hosting</td>
+                    <td>Free Daily BackupsNo Managed Hosting</td>
+                </tr>
+                <tr>
+                    <td>No Managed Hosting</td>
+                    <td>No Managed Hosting</td>
+                    <td>Managed Hosting</td>
+                    <td>Managed Hosting</td>
+                </tr>
+            </tbody>
+            <tfoot>
+                <tr>
+                    <td><a href="#form"> Signup</a></td>
+                    <td><a href="#form"> Signup</a></td>
+                    <td><a href="#form"> Signup</a></td>
+                    <td><a href="#form"> Signup</a></td>
+                </tr>
+            </tfoot>
+        </table>
     </main>
 
     <footer>
         <div class="wrapper row">
-            <div>
-                <h4>Quick links</h4>
+            <section>
+                <h3>Quick links</h3>
                 <nav>
                     <li><a href="index.html">Home</a></li>
                     <li><a href="benefits.html">Benefits</a></li>
                     <li><a href="#">Hosting</a></li>
                 </nav>
-            </div>
-            <div>
+            </section>
+            <section>
                 <h4>Contact Us</h4>
-                <nav>
-                    <li>Address:<a href="">12 Fake St. Fakersville FA 12345</a></li>
-                    <li>Email:<a href="">info@acton.com</a></li>
-                    <li>Phone<a href="">800-123-4567</a></li>
-                </nav>
-            </div>
-            <div>
+                <address>
+                    <ul>
+                        <li>Address:<a href="">12 Fake St. Fakersville FA 12345</a></li>
+                        <li>Email:<a href="">info@acton.com</a></li>
+                        <li>Phone<a href="">800-123-4567</a></li>
+                    </ul>
+                </address>
+            </section>
+            <section>
                 <h4>Quick links</h4>
-                <i class="fa-brands fa-facebook-f"></i>
-                <i class="fa-brands fa-instagram"></i>
-                <i class="fa-brands fa-twitter"></i>
-                <i class="fa-brands fa-linkedin-in"></i>
-            </div>
-        </div>
+                <ul>
+                    <li><i class="fa-brands fa-facebook-f"></i></li>
+                    <li><i class="fa-brands fa-instagram"></i></li>
+                    <li><i class="fa-brands fa-twitter"></i></li>
+                    <li><i class="fa-brands fa-linkedin-in"></i></li>
+                </ul>
+            </section>
+        </section>
     </footer>
 </body>
 </html>

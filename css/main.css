@@ -37,7 +37,7 @@
 }
 
 html {
-    font-family: 'Open Sans', sans-serif;
+    font-family: 'Source Sans Pro', sans-serif;
 }
 
  
@@ -45,6 +45,33 @@ html {
     4.0 - ELEMENTS
 -------------------------------------------------------------- */
 /*------ Typography------- */
+#support-items {
+    font-size: 18px;
+    line-height: 23px;
+    font-weight: 700;
+}
+
+#support-items li:last-child {
+    border-left:#3F3C45 solid 1px;
+    padding-left: 16px;
+    margin-left: 16px;
+}
+
+#support-items a {
+    font-weight: 400;
+    color:#3F3C45;  
+    text-decoration: none;
+    padding-left: 5px;
+}
+
+
+
+
+
+
+
+
+/*------font awesome------ */
 i {
     font-size: 50px;
     line-height: 50px;
@@ -102,33 +129,38 @@ footer > div i {
 
 
 /* ----- Nav ----- */
-nav li {
-    margin: 0 20px;
+#navigation-items a {
     text-decoration: none;
+    padding: 15px 20px;
+    background-color: #FE8360;
+    text-decoration: none;
+    font-weight: 700;
+    color: #ffff;
 }
 
-body > header > div nav li {
-    display: inline-block;
-}
-
-body > header > div nav {
+#navigation-items {
+    margin-top: 25px;
     width: 485px;
 }
 
-nav ul {
-    list-style-type: none;
+#navigation-items ul {
+    background-color: #FE8360;
 }
-
-nav a {
-    text-decoration: none;
-    padding: 5px 6px;
-}
-
-
 
 
 
 /* ----- Content ----- */
+header li {
+    display: inline-block;
+}
+
+header ul {
+    text-align: right;
+}
+
+
+
+
 
 
 
@@ -137,3 +169,11 @@ nav a {
 -------------------------------------------------------------- */
 
 /* ----- Screen Reader ----- */
+.sr-only {
+    position:absolute;
+    left:-10000px;
+    top:auto;
+    width:1px;
+    height:1px;
+    overflow:hidden;
+}
