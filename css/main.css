@@ -64,9 +64,11 @@ html {
     padding-left: 5px;
 }
 
-
-
-
+#hero > div {
+    margin: 0 auto;
+    width: 200px;
+    text-align: center;
+}
 
 
 
@@ -125,11 +127,30 @@ footer > div i {
 
 
 /* ----- Images----- */
+#hero {
+    background: url(../img/laptop-hero-img.jpg) no-repeat center center;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    -ms-background-size: cover;
+    background-size: cover;
+    padding: 120px 0;
+}
 
+.background {
+    background: url(../img/woman-on-laptop-img.jpg) no-repeat;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    -ms-background-size: cover;
+    background-size: cover;
+    height: 358px;
+    width: 337px;
+}
 
 
 /* ----- Nav ----- */
-#navigation-items a {
+header nav a {
     text-decoration: none;
     padding: 15px 20px;
     background-color: #FE8360;
@@ -140,16 +161,31 @@ footer > div i {
 
 #navigation-items {
     margin-top: 25px;
-    width: 485px;
+    width: 281px;
 }
 
 #navigation-items ul {
     background-color: #FE8360;
+    padding: 16px 0;
+}
+
+header nav a:hover {
+    background-color: #51CCF6;
+}
+
+header nav a:hover,
+header nav a {
+    transition: 1s;
 }
 
 
-
 /* ----- Content ----- */
+header .row .row {
+    width: 324px;
+    flex-direction: column;
+    align-items: flex-end;
+}
+
 header li {
     display: inline-block;
 }
@@ -160,6 +196,9 @@ header ul {
 
 
 
+#section-moving {
+    width: 625px;
+}
 
 
 
