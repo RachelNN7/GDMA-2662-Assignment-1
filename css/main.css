@@ -38,6 +38,7 @@
 
 html {
     font-family: 'Source Sans Pro', sans-serif;
+    color: #3F3C45;
 }
 
  
@@ -45,6 +46,44 @@ html {
     4.0 - ELEMENTS
 -------------------------------------------------------------- */
 /*------ Typography------- */
+#hero > div {
+    margin: 0 auto;
+    text-align: center;
+}
+
+#hero p {
+    font-size: 30px;
+    font-weight: 300;
+    text-transform: uppercase;
+    margin: 0;
+}
+
+#hero p:first-child  {
+    font-weight: 700;
+    font-size: 45px;
+    margin: 150px 0 0;
+}
+
+#hero p,
+#hero p:first-child {
+    color: #ffff;
+}
+
+
+
+#section-list h2 {
+    font-weight: 300;
+    font-size: 18px;
+    line-height: 25px;
+}
+
+#section-list h2 span {
+    font-size: 30px;
+    font-weight: 700;
+}
+
+
+
 #support-items {
     font-size: 18px;
     line-height: 23px;
@@ -64,11 +103,23 @@ html {
     padding-left: 5px;
 }
 
-#hero > div {
-    margin: 0 auto;
-    width: 200px;
-    text-align: center;
+
+
+.section-group {
+    margin-bottom: 60px;
 }
+
+.section-group h2 {
+    margin-bottom: 5px;
+}
+
+.section-group p {
+    margin-top: 5px;
+    line-height: 25px;
+}
+
+
+
 
 
 
@@ -94,6 +145,18 @@ footer > div i {
     font-weight: 400;
     line-height: 22px;
     color: #b6bcc7;
+}
+
+.background i {
+    position: absolute;
+    width: 194px;
+    height: 200px;
+    top: 580px;
+    right: 415px;
+}
+
+.section-group div:first-child {
+    margin: 25px 25px 0 0;
 }
 
 
@@ -123,10 +186,6 @@ footer > div i {
 -------------------------------------------------------------- */
 
 /* ----- HERO ----- */
-
-
-
-/* ----- Images----- */
 #hero {
     background: url(../img/laptop-hero-img.jpg) no-repeat center center;
     -webkit-background-size: cover;
@@ -134,9 +193,12 @@ footer > div i {
     -o-background-size: cover;
     -ms-background-size: cover;
     background-size: cover;
-    padding: 120px 0;
+    padding: 70px 0;
+    margin-bottom: 60px;
 }
 
+
+/* ----- Images----- */
 .background {
     background: url(../img/woman-on-laptop-img.jpg) no-repeat;
     -webkit-background-size: cover;
@@ -154,7 +216,6 @@ header nav a {
     text-decoration: none;
     padding: 15px 20px;
     background-color: #FE8360;
-    text-decoration: none;
     font-weight: 700;
     color: #ffff;
 }
@@ -167,6 +228,7 @@ header nav a {
 #navigation-items ul {
     background-color: #FE8360;
     padding: 16px 0;
+    margin-bottom: 0;
 }
 
 header nav a:hover {
@@ -180,6 +242,7 @@ header nav a {
 
 
 /* ----- Content ----- */
+/* ----- hero ----- */
 header .row .row {
     width: 324px;
     flex-direction: column;
@@ -194,11 +257,104 @@ header ul {
     text-align: right;
 }
 
-
-
-#section-moving {
-    width: 625px;
+#hero div {
+    width: 394px;
 }
+
+
+/* ----- benefits-hero----- */
+#benefits-hero-bg {
+    background-color: #51CCF8;
+    padding: 80px 0 35px 0;
+}
+
+
+
+/* ----- section-list----- */
+#section-list {
+    margin-bottom: 60px;
+    width: 660px;
+}
+
+#section-list ul {
+    font-weight: 700;
+    line-height: 25px;
+}
+
+#section-list ul li:nth-child(even) {
+    list-style-type: none;
+    font-weight: 400;
+}
+
+#section-list > div {
+    padding: 1px 6px;
+    background-color: #FE8360;
+    width: 175px;
+    transition: 1s;
+    text-align: center;
+}
+
+#section-list > div:hover {
+    background-color: #51CCF6;
+}
+
+#section-list > div a {
+    font-weight: 700;
+    color: #ffff;
+    text-decoration: none;
+    transition: 1s;
+}
+
+
+/* ----- footer----- */
+footer {
+    background-color: #3F3C45;
+    padding: 30px 0 40px 0;
+    color: #ffff;
+}
+
+footer section:nth-child(even) {
+    margin: 0 110px;
+}
+
+footer h4,
+footer h3 {
+    margin: 0;
+    font-size: 17px;
+}
+
+footer .row {
+    justify-content: flex-start;
+}
+
+footer ul {
+    list-style-type: none;
+    padding: 0;
+    margin-top: 10px;
+}
+
+footer li:nth-child(even) {
+    padding: 10px 0;
+}
+
+footer a {
+    color: #B6BCC7;
+    text-decoration: none;
+}
+
+footer a:hover {
+    color: #ffff;
+}
+
+#quick-links li {
+    padding: 5px;
+}
+
+
+
+
+
+
 
 
 
