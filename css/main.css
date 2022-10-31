@@ -114,8 +114,8 @@ legend i {
     position: absolute;
     width: 194px;
     height: 200px;
-    right: 400px;
-    bottom: -57px;
+    right: 410px;
+    bottom: -54px;
 }
 
 .section-group div:first-child {
@@ -213,6 +213,7 @@ form h2 {
 form h2 span {
     font-size: 30px;
     font-weight: 700;
+    text-transform: uppercase;
 }
 
 #formation i {
@@ -346,10 +347,12 @@ header ul {
 /* ----- Nav ----- */
 header nav a {
     text-decoration: none;
-    padding: 14px 17px;
+    padding: 17px 17px 14px;
     background-color: #FE8360;
     font-weight: 700;
     color: #ffff;
+    text-transform: uppercase;
+    font-size: 14px;
 }
 
 header nav {
@@ -417,6 +420,7 @@ header nav a {
 #section-list h2 span {
     font-size: 30px;
     font-weight: 700;
+    text-transform: uppercase;
 }
 
 
@@ -437,7 +441,7 @@ header nav a {
 
 /* ----- section-group----- */
 .section-group {
-    margin: 80px 0;
+    margin: 15px 0 30px;
 }
 
 .section-group h2 {
@@ -457,7 +461,7 @@ header nav a {
 
 /* ----- footer----- */
 footer {
-    background-color: #3F3C45;
+    background-color: #4D515C;
     padding: 30px 0 40px 0;
     color: #ffff;
 }
@@ -470,6 +474,7 @@ footer h4,
 footer h3 {
     margin: 0;
     font-size: 17px;
+    text-transform: uppercase;
 }
 
 footer .row {
@@ -479,7 +484,7 @@ footer .row {
 footer ul {
     list-style-type: none;
     padding: 0;
-    margin-top: 10px;
+    margin-top: 4px;
 }
 
 footer li:nth-child(even) {
@@ -497,7 +502,11 @@ footer a:hover {
 }
 
 footer ul:last-child li {
-    padding: 5px;
+    padding: 5px 0;
+}
+
+footer section:last-child li {
+    padding-right: 25px;
 }
 
 footer > div i {
