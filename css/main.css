@@ -6,9 +6,12 @@
 1.0 - Settings: used with preprocessors and contain font, colors definitions, etc.
 2.0 - Tools: globally used mixins and functions. Use for preprocessor only.
 3.0 - Generic: reset and/or normalize styles, box-sizing definition, etc. 
+        -Universal
 4.0 - Elements: styling for bare/generic HTML elements 
-        - Typography: Headings, Paragraphs, Blockquotes, Anchors
+        -main
+        -font awesome
         -table
+        -support items
         -form
 5.0 - Objects: class-based selectors which define undecorated design patterns, building blocks
         - Framework
@@ -16,7 +19,10 @@
         -nav
         -hero
         -img
-        -content
+        -header
+        -main-bg
+        -section-list
+        -section-group
 7.0 - Utilities: utilities and helper classes with ability to override anything which goes before in the triangle, eg. hide helper class
         - Screen reader	    
 --------------------------------------------------------------*/
@@ -45,7 +51,245 @@ html {
 /*--------------------------------------------------------------
     4.0 - ELEMENTS
 -------------------------------------------------------------- */
-/*------ Typography------- */
+/*------ main------- */
+#main-benefit h1,
+#main-hosting h1 {
+    color: #ffff;
+    text-transform: uppercase;
+    font-weight: 300;
+    font-size: 25px;
+}
+
+#main-benefit span,
+#main-hosting span {
+    font-weight: 700;
+    font-size: 55px;
+}
+
+
+/*------support items------ */
+#support-items {
+    font-size: 18px;
+    line-height: 23px;
+    font-weight: 700;
+}
+
+#support-items li:last-child {
+    border-left:#3F3C45 solid 1px;
+    padding-left: 16px;
+    margin-left: 16px;
+}
+
+#support-items a {
+    font-weight: 400;
+    color:#3F3C45;  
+    text-decoration: none;
+    padding-left: 5px;
+    transition: 1s;
+}
+
+#support-items a:hover {
+    color: #FE8360;
+    transition: 1s;
+}
+
+
+/*------font awesome------ */
+i {
+    font-size: 50px;
+    line-height: 50px;
+}
+
+legend i, i {
+    font-weight: 900;
+    color: #FE8360;
+}
+
+legend i {
+    font-size: 20px;
+    line-height: 20px;
+}
+
+.background div {
+    position: absolute;
+    width: 194px;
+    height: 200px;
+    right: 400px;
+    bottom: -57px;
+}
+
+.section-group div:first-child {
+    margin: 25px 25px 0 0;
+}
+
+
+/*------ Table------- */
+table {
+    border-collapse: collapse;
+    text-align: center;
+    margin: 60px auto;
+    width: 975px;
+    border: #E0DFE1 solid 1px;
+}
+
+thead tr:first-child th {
+    text-transform: uppercase;
+    font-size: 20px;
+    font-weight: 400;
+}
+
+thead tr:first-child > th:first-line {
+    font-weight: 700;
+    font-size: 70px;
+}
+
+thead tr:first-child > th:first-letter {
+    font-weight: 200;
+}
+
+td,
+th {
+    border-right: #E0DFE1 solid 1px;
+}
+
+
+
+tbody tr:nth-child(2) td {
+    border-top: #E0DFE1 solid 1px;
+}
+ 
+tbody tr:nth-child(2) td,
+tbody tr:nth-child(3) td,
+tbody tr:nth-child(4) td {
+    border-bottom: #E0DFE1 solid 1px;
+}
+
+td,
+th {
+    padding: 25px 0;
+}
+
+td a {
+    background-color: #FE8360;
+}
+
+td a:hover {
+    background-color: #51CCF6;
+    transition: 1s;
+}
+
+th a {
+    background-color: #51CCF8;
+}
+
+tfoot td a,
+th a {
+    font-weight: 700;
+    color: #ffff;
+    text-decoration: none;
+    padding: 10px 54px;
+    width: 155px;
+    transition: 1s;
+}
+
+
+/*------Form------- */
+form h2 {
+    font-weight: 300;
+    font-size: 18px;
+    line-height: 25px;
+    margin: 0;
+}
+
+#formation {
+    background-color: #E7F5F8;
+    padding: 35px 0;
+}
+
+#formation .row {
+    align-items: center;
+}
+
+form h2 span {
+    font-size: 30px;
+    font-weight: 700;
+}
+
+#formation i {
+    font-size: 22px;
+    margin: 10px 0 0;
+}
+
+p input {
+    background-color: #FE8360;
+    border: none;
+    color:#ffff;
+    text-transform: uppercase;
+    font-weight: 600;
+    transition: 1s;
+}
+
+p input:hover {
+    background-color: #51CCF6;
+    transition: 1s;
+}
+
+select,
+input,
+p input {
+    padding: 10px 0;
+    width: 150px;
+}
+
+input {
+    width: 300px;
+}
+
+
+
+
+
+/*--------------------------------------------------------------
+    5.0 - Objects
+-------------------------------------------------------------- */
+
+/* ----- Framework ----- */
+.wrapper {
+    width: 1024px;
+    margin: 0 auto;
+}
+
+.row {
+    display: flex;
+    justify-content: space-between;
+}
+
+
+/*--------------------------------------------------------------
+    6.0 - COMPONENTS
+-------------------------------------------------------------- */
+h1,
+#aline-element {
+    margin-top: 36px;
+}
+
+
+/* ----- HERO ----- */
+#hero {
+    background: url(../img/laptop-hero-img.jpg) no-repeat center center;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    -ms-background-size: cover;
+    background-size: cover;
+    padding: 70px 0;
+    margin-bottom: 60px;
+}
+
+#hero div {
+    width: 394px;
+}
+
 #hero > div {
     margin: 0 auto;
     text-align: center;
@@ -70,135 +314,23 @@ html {
 }
 
 
-
-#section-list h2 {
-    font-weight: 300;
-    font-size: 18px;
-    line-height: 25px;
+/* ----- header ----- */
+header .row .row {
+    width: 324px;
+    flex-direction: column;
+    align-items: flex-end;
 }
 
-#section-list h2 span {
-    font-size: 30px;
-    font-weight: 700;
+header li {
+    display: inline-block;
 }
 
-
-
-#support-items {
-    font-size: 18px;
-    line-height: 23px;
-    font-weight: 700;
-}
-
-#support-items li:last-child {
-    border-left:#3F3C45 solid 1px;
-    padding-left: 16px;
-    margin-left: 16px;
-}
-
-#support-items a {
-    font-weight: 400;
-    color:#3F3C45;  
-    text-decoration: none;
-    padding-left: 5px;
+header ul {
+    text-align: right;
 }
 
 
-
-.section-group {
-    margin-bottom: 60px;
-}
-
-.section-group h2 {
-    margin-bottom: 5px;
-}
-
-.section-group p {
-    margin-top: 5px;
-    line-height: 25px;
-}
-
-
-
-
-
-
-
-/*------font awesome------ */
-i {
-    font-size: 50px;
-    line-height: 50px;
-}
-
-legend i, i {
-    font-weight: 900;
-    color: #FE8360;
-}
-
-legend i {
-    font-size: 20px;
-    line-height: 20px;
-}
-
-footer > div i {
-    font-size: 14px;
-    font-weight: 400;
-    line-height: 22px;
-    color: #b6bcc7;
-}
-
-.background i {
-    position: absolute;
-    width: 194px;
-    height: 200px;
-    top: 580px;
-    right: 415px;
-}
-
-.section-group div:first-child {
-    margin: 25px 25px 0 0;
-}
-
-
-/*------ Table------- */
-
-/*------Form------- */
-
-
-/*--------------------------------------------------------------
-    5.0 - Objects
--------------------------------------------------------------- */
-
-/* ----- Framework ----- */
-.wrapper {
-    width: 1024px;
-    margin: 0 auto;
-}
-
-.row {
-    display: flex;
-    justify-content: space-between;
-}
-
-
-/*--------------------------------------------------------------
-    6.0 - COMPONENTS
--------------------------------------------------------------- */
-
-/* ----- HERO ----- */
-#hero {
-    background: url(../img/laptop-hero-img.jpg) no-repeat center center;
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
-    -ms-background-size: cover;
-    background-size: cover;
-    padding: 70px 0;
-    margin-bottom: 60px;
-}
-
-
-/* ----- Images----- */
+/* ----- img----- */
 .background {
     background: url(../img/woman-on-laptop-img.jpg) no-repeat;
     -webkit-background-size: cover;
@@ -214,20 +346,20 @@ footer > div i {
 /* ----- Nav ----- */
 header nav a {
     text-decoration: none;
-    padding: 15px 20px;
+    padding: 14px 17px;
     background-color: #FE8360;
     font-weight: 700;
     color: #ffff;
 }
 
-#navigation-items {
+header nav {
     margin-top: 25px;
-    width: 281px;
+    width: 263px;
 }
 
-#navigation-items ul {
+header nav ul {
     background-color: #FE8360;
-    padding: 16px 0;
+    padding: 15px 0;
     margin-bottom: 0;
 }
 
@@ -239,35 +371,6 @@ header nav a:hover,
 header nav a {
     transition: 1s;
 }
-
-
-/* ----- Content ----- */
-/* ----- hero ----- */
-header .row .row {
-    width: 324px;
-    flex-direction: column;
-    align-items: flex-end;
-}
-
-header li {
-    display: inline-block;
-}
-
-header ul {
-    text-align: right;
-}
-
-#hero div {
-    width: 394px;
-}
-
-
-/* ----- benefits-hero----- */
-#benefits-hero-bg {
-    background-color: #51CCF8;
-    padding: 80px 0 35px 0;
-}
-
 
 
 /* ----- section-list----- */
@@ -305,6 +408,52 @@ header ul {
     transition: 1s;
 }
 
+#section-list h2 {
+    font-weight: 300;
+    font-size: 18px;
+    line-height: 25px;
+}
+
+#section-list h2 span {
+    font-size: 30px;
+    font-weight: 700;
+}
+
+
+/* ----- main-bg----- */
+#main-benefit {
+    background-color: #51CCF8;
+}
+
+#main-hosting {
+    background-color: #FE8360;
+}
+
+#main-benefit,
+#main-hosting {
+    padding: 80px 0 35px 0;
+}
+
+
+/* ----- section-group----- */
+.section-group {
+    margin: 80px 0;
+}
+
+.section-group h2 {
+    margin-bottom: 5px;
+}
+
+.section-group p {
+    margin-top: 5px;
+    line-height: 25px;
+}
+
+.section-group section {
+    width: 310px;
+}
+
+
 
 /* ----- footer----- */
 footer {
@@ -340,23 +489,23 @@ footer li:nth-child(even) {
 footer a {
     color: #B6BCC7;
     text-decoration: none;
+    margin-left: 5px;
 }
 
 footer a:hover {
     color: #ffff;
 }
 
-#quick-links li {
+footer ul:last-child li {
     padding: 5px;
 }
 
-
-
-
-
-
-
-
+footer > div i {
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 22px;
+    color: #b6bcc7;
+}
 
 
 /*--------------------------------------------------------------

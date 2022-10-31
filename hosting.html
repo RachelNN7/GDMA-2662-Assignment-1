@@ -14,7 +14,7 @@
 <body>
     <header>
         <div class="wrapper row">
-            <div>
+            <div id="aline-element">
                 <img src="img/act-On-logo-img.jpg" alt="act-on" width="150">
             </div>
             <div class="row">
@@ -22,7 +22,7 @@
                     <li>Support<a href="#">info@acton.com</a></li>
                     <li><a href="#">login</a></li>
                 </ul>
-                <nav id="navigation-items">
+                <nav>
                     <ul>
                         <li><a href="index.html">Home</a></li>
                         <li><a href="benefits.html">Benefits</a></li>
@@ -31,45 +31,48 @@
                 </nav>
             </div>
         </div>
-        <div class="hosting-hero-bg">
+        <div id="main-hosting">
             <div class="wrapper">
-                <h1>our hosting<h1>
+                <h1>our <br><span>hosting</span><h1>
             </div>
         </div>
     </header>
         
-    <main class="wrapper">
-        <div id="form">
-            <form class="row">
-                <header>
-                    <h2>Search Your<br> Domain</h2>
-                </header>
-                <label for="sr-only" class="sr-only"><i class="fa-solid fa-magnifying-glass"></i></label>
-                <input type="text" name="domain" placeholder="Enter your domain name">
+    <main>
+        <div id="formation">
+            <div class="wrapper">
+                <i class="fa-solid fa-magnifying-glass"></i>
+                <form class="row">
+                    <header>
+                        <h2>Search Your<br> <span>Domain</span></h2>
+                    </header>
+
+                    <input type="text" name="domain" placeholder="Enter your domain name">
                 
-                <label for="sr-only" class="sr-only">year &#40;0 &#45;1&#41;</label>
-                <select for="year" id="year">
-                    <option value="0-1">&#40;0 &#45;1&#41; years</option>
-                    <option value="1-2">&#40;1 &#45;2&#41; years</option>
-                    <option value="2-3">&#40;2 &#45;3&#41; years</option>
-                    <option value="5+">5&#43; years</option>
-                </select>
+                    <label for="sr-only" class="sr-only">year &#40;0 &#45;1&#41;</label>
+                    <select for="year" id="year">
+                        <option value="0-1">&#40;0 &#45;1&#41; years</option>
+                        <option value="1-2">&#40;1 &#45;2&#41; years</option>
+                        <option value="2-3">&#40;2 &#45;3&#41; years</option>
+                        <option value="5+">5&#43; years</option>
+                    </select>
 
-                <label for="sr-only" class="sr-only">.com</label>
-                <select for=".com" id="com">
-                    <option value=".com">.com</option>
-                    <option value=".org">.org</option>
-                    <option value=".net">.net</option>
-                    <option value=".gov">.gov</option>
-                    <option value=".edu">.edu</option>
-                </select>
+                    <label for="sr-only" class="sr-only">.com</label>
+                    <select for=".com" id="com">
+                        <option value=".com">.com</option>
+                        <option value=".org">.org</option>
+                        <option value=".net">.net</option>
+                        <option value=".gov">.gov</option>
+                        <option value=".edu">.edu</option>
+                    </select>
 
-                <p>
-                    <input type="submit" value="Submit">
-                </p> 
-            </form>
+                    <p>
+                        <input type="submit" value="Search">
+                    </p>  
+                </form>
+            </div>
         </div>
-
+            
         <table>
             <thead>
                 <tr>
@@ -77,13 +80,13 @@
                     <th>$7 <br> per month</th>
                     <th>$9 <br> per month</th>
                     <th>$10 <br> per month</th>
-                  </tr>
-                  <tr>
-                      <th>basic plan</th>
-                      <th>standerd plan</th>
-                      <th>pro plan</th>
-                      <th>premium plan</th>
-                    </tr>
+                </tr>
+                <tr>
+                      <th><a href="#form">basic plan</a></th>
+                      <th><a href="#form">standard plan</a></th>
+                      <th><a href="#form">pro plan</a></th>
+                      <th><a href="#form">premium plan</a></th>
+                </tr>
             </thead>
             <tbody>
                 <tr>
@@ -91,7 +94,7 @@
                     <td>5GB Disk Space</td>
                     <td>10GB Disk Space</td>
                     <td>15GB Disk Space</td>
-                  </tr>
+                </tr>
                 <tr>
                     <td>1TB Bandwidth</td>
                     <td>1TB Bandwidth</td>
@@ -106,9 +109,9 @@
                 </tr>
                 <tr>
                     <td>No Daily Backups</td>
-                    <td>Free Daily BackupsNo Managed Hosting</td>
-                    <td>Free Daily BackupsNo Managed Hosting</td>
-                    <td>Free Daily BackupsNo Managed Hosting</td>
+                    <td>Free Daily Backups</td>
+                    <td>Free Daily Backups</td>
+                    <td>Free Daily Backups</td>
                 </tr>
                 <tr>
                     <td>No Managed Hosting</td>
@@ -132,11 +135,11 @@
         <div class="wrapper row">
             <section>
                 <h3>Quick links</h3>
-                <nav>
+                <ul>
                     <li><a href="index.html">Home</a></li>
                     <li><a href="benefits.html">Benefits</a></li>
                     <li><a href="#">Hosting</a></li>
-                </nav>
+                </il>
             </section>
             <section>
                 <h3>Contact Us</h3>
@@ -148,7 +151,7 @@
                     </ul>
                 </address>
             </section>
-            <section id="quick-links">
+            <section>
                 <h3>Quick links</h3>
                 <ul class="row">
                     <li><i class="fa-brands fa-facebook-f"></i></li>
