@@ -20,9 +20,9 @@
         -hero
         -img
         -header
-        -main-bg
-        -section-list
-        -section-group
+        -main
+        -element-list
+        -item-group
 7.0 - Utilities: utilities and helper classes with ability to override anything which goes before in the triangle, eg. hide helper class
         - Screen reader	    
 --------------------------------------------------------------*/
@@ -118,7 +118,7 @@ legend i {
     bottom: -54px;
 }
 
-.section-group div:first-child {
+.item-group div:first-child {
     margin: 25px 25px 0 0;
 }
 
@@ -132,40 +132,9 @@ table {
     border: #E0DFE1 solid 1px;
 }
 
-thead tr:first-child th {
-    text-transform: uppercase;
-    font-size: 20px;
-    font-weight: 400;
-}
-
-thead tr:first-child > th:first-line {
-    font-weight: 700;
-    font-size: 70px;
-}
-
-thead tr:first-child > th:first-letter {
-    font-weight: 200;
-}
-
 td,
 th {
     border-right: #E0DFE1 solid 1px;
-}
-
-
-
-tbody tr:nth-child(2) td {
-    border-top: #E0DFE1 solid 1px;
-}
- 
-tbody tr:nth-child(2) td,
-tbody tr:nth-child(3) td,
-tbody tr:nth-child(4) td {
-    border-bottom: #E0DFE1 solid 1px;
-}
-
-td,
-th {
     padding: 25px 0;
 }
 
@@ -191,6 +160,32 @@ th a {
     width: 155px;
     transition: 1s;
 }
+
+thead tr:first-child th {
+    text-transform: uppercase;
+    font-size: 20px;
+    font-weight: 400;
+}
+
+thead tr:first-child > th:first-line {
+    font-weight: 700;
+    font-size: 70px;
+}
+
+thead tr:first-child > th:first-letter {
+    font-weight: 200;
+}
+
+tbody tr:nth-child(2) td {
+    border-top: #E0DFE1 solid 1px;
+}
+ 
+tbody tr:nth-child(2) td,
+tbody tr:nth-child(3) td,
+tbody tr:nth-child(4) td {
+    border-bottom: #E0DFE1 solid 1px;
+}
+
 
 
 /*------Form------- */
@@ -245,9 +240,6 @@ p input {
 input {
     width: 300px;
 }
-
-
-
 
 
 /*--------------------------------------------------------------
@@ -376,23 +368,23 @@ header nav a {
 }
 
 
-/* ----- section-list----- */
-#section-list {
+/* ----- element-list----- */
+#element-list {
     margin-bottom: 60px;
     width: 660px;
 }
 
-#section-list ul {
+#element-list ul {
     font-weight: 700;
     line-height: 25px;
 }
 
-#section-list ul li:nth-child(even) {
+#element ul li:nth-child(even) {
     list-style-type: none;
     font-weight: 400;
 }
 
-#section-list > div {
+#element-list > div {
     padding: 1px 6px;
     background-color: #FE8360;
     width: 175px;
@@ -400,24 +392,24 @@ header nav a {
     text-align: center;
 }
 
-#section-list > div:hover {
+#element-list > div:hover {
     background-color: #51CCF6;
 }
 
-#section-list > div a {
+#element-list > div a {
     font-weight: 700;
     color: #ffff;
     text-decoration: none;
     transition: 1s;
 }
 
-#section-list h2 {
+#element-list h2 {
     font-weight: 300;
     font-size: 18px;
     line-height: 25px;
 }
 
-#section-list h2 span {
+#element-list h2 span {
     font-size: 30px;
     font-weight: 700;
     text-transform: uppercase;
@@ -439,24 +431,23 @@ header nav a {
 }
 
 
-/* ----- section-group----- */
-.section-group {
+/* ----- item-group----- */
+.item-group {
     margin: 15px 0 30px;
 }
 
-.section-group h2 {
+.item-group h2 {
     margin-bottom: 5px;
 }
 
-.section-group p {
+.item-group p {
     margin-top: 5px;
     line-height: 25px;
 }
 
-.section-group section {
+.item-group section {
     width: 310px;
 }
-
 
 
 /* ----- footer----- */
